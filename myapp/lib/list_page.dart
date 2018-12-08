@@ -127,10 +127,10 @@ class _ListPageState extends State<ListPage> {
   Widget buildListTile(BuildContext context, String item) {
     Widget secondary;
     if (_itemType == _MaterialListType.duasLinhas) {
-      secondary = const Text('Texto Secundário');
+      secondary = const Text('Caio para de pagar a leticia man, vai falir');
     } else if (_itemType == _MaterialListType.tresLinhas) {
       secondary = const Text(
-        'Essa linha adicional aparece com o modelo 3 linhas. Vou adicionar mais texto aqui para quebrar a terceira linha..',
+        'Essa linha adicional aparece com o modelo 3 linhas. Mano o marco é tão gay que merecia um prêmio na moral..',
       );
     }
     return new MergeSemantics(
@@ -166,7 +166,7 @@ class _ListPageState extends State<ListPage> {
     return new Scaffold(
       key: scaffoldKey,
       appBar: new AppBar(
-        title: new Text('Listas Page'),
+        title: new Text('List Page'),
         backgroundColor: Colors.red,
         actions: <Widget>[
           new IconButton(

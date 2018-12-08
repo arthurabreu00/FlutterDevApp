@@ -67,7 +67,7 @@ class _HomePageState extends State<HomePage>{
             onTap: (){
             Navigator.of(context).pop();
             Navigator.of(context).push(new MaterialPageRoute(
-              builder: (BuildContext context) => new CardPage()
+              builder: (BuildContext context) => new CardsPage()
             ));
             }
             ), new Divider(),
@@ -83,7 +83,7 @@ class _HomePageState extends State<HomePage>{
         ),
       ),
       body: new Center(
-        child: new Text('Olá mundo'), 
+        child: new Text('Criando meu primeiro aplicativo, By> Arthur Tavares'), 
       ),
     );
   }
