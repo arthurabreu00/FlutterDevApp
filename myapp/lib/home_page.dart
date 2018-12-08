@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 import 'bottons_page.dart';
+import 'cards_page.dart';
+import 'list_page.dart';
 
 class HomePage extends StatefulWidget{
     @override
@@ -41,16 +43,41 @@ class _HomePageState extends State<HomePage>{
             new ListTile(
               title: new Text('Botões'),
               trailing: new Icon(Icons.arrow_forward),
+              onTap: (){
+                Navigator.of(context).pop();
+                Navigator.of(context).push(new MaterialPageRoute(
+                  builder: (BuildContext context) => new BottonsPage()
+                ));
+              }
             ),
             new ListTile(
               title: new Text('Listas'),
               trailing: new Icon(Icons.arrow_forward),
+              onTap: (){
+              Navigator.of(context).pop();
+              Navigator.of(context).push(new MaterialPageRoute(
+                builder: (BuildContext context) => new ListPage()
+              ));
+              }
             ),
-            new Divider(),
+           
             new ListTile(
             title: new Text('Cards'),
             trailing: new Icon(Icons.arrow_forward),
-            ),
+            onTap: (){
+            Navigator.of(context).pop();
+            Navigator.of(context).push(new MaterialPageRoute(
+              builder: (BuildContext context) => new CardPage()
+            ));
+            }
+            ), new Divider(),
+            new ListTile(
+              title: new Text('Cancelar'),
+              trailing: new Icon(Icons.close),
+              onTap: (){
+                Navigator.of(context).pop();
+              },
+            )
           ],
           
         ),
